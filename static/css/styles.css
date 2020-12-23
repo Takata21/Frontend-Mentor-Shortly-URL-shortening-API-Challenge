@@ -213,6 +213,23 @@ body {
     border-radius: 8px;
 }
 
+.link-form .url {
+    margin-bottom: 15px;
+}
+
+.link-form .url .error-message {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: var(--Red);
+    font-size: .6em;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
 .link-form .link-input {
     width: 100%;
     font-size: .9em;
@@ -220,7 +237,12 @@ body {
     height: 49px;
     box-sizing: border-box;
     padding-left: 19px;
-    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.link-form .link-input.error {
+    border: 3px solid var(--Red);
+    color: var(--Red);
 }
 
 .u-btn.link-btn {
@@ -231,6 +253,64 @@ body {
     padding: 0;
     border-radius: 5px;
     height: 49px;
+}
+
+
+/*--------------New Link Styles----------------*/
+
+.shortlinks {
+    margin: 22px 0;
+    display: grid;
+    gap: 20px;
+}
+
+.shortlinks .newlink {
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+}
+
+.shortlinks .newlink .newlink-original {
+    display: block;
+    margin: 15px 0;
+    color: var(--DarkViolet);
+    text-decoration: none;
+}
+
+.shortlinks .newlink .newlink-original::after {
+    content: '';
+    display: block;
+    border-top: 1px solid var(--bg);
+    margin-top: 10px;
+}
+
+.shortlinks .newlink .newlink-short {
+    display: block;
+    margin: 15px 0;
+    text-decoration: none;
+    color: var(--Cyan);
+}
+
+.shortlinks .newlink .newlink-btn {
+    width: 100%;
+    background: var(--Cyan);
+    margin: auto;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: .9em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.shortlinks .newlink .newlink-btn.copied {
+    background: var(--DarkViolet);
 }
 
 
