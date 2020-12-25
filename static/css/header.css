@@ -1,0 +1,123 @@
+.header {
+    padding: 36px 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 36px;
+    z-index: 998;
+    background: white;
+}
+
+.header .header__logo {
+    display: block;
+    background-image: url('../images/logo.svg');
+    background-position: center;
+    background-size: contain;
+    width: 123px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.header .header__menu {
+    background-image: url('../images/icon-hamburger.svg');
+    background-position: center;
+    background-size: contain;
+    width: 28px;
+    height: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.header .header__content .header__menu {
+    background-image: url('../images/icon-hamburger.svg');
+    background-position: center;
+    background-size: contain;
+    width: 28px;
+    height: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked~.header .header__content {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.header__content {
+    position: absolute;
+    bottom: -415px;
+    background: var(--DarkViolet);
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: .8em;
+    border-radius: 15px;
+    visibility: hidden;
+    transform: translateY(-150px);
+    transition: 0.5s transform, 0.3s opacity;
+    will-change: transform;
+    margin: 0 25px;
+    z-index: 999;
+}
+
+.header__content a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+}
+
+.header__content .menu .menu__list,
+.header__content .menu .menu__login {
+    margin: 0;
+    padding: 0;
+}
+
+.header__content .menu .menu__list .menu__list-item:first-child {
+    padding-top: 47px;
+}
+
+.header__content .menu .menu__list .menu__list-item {
+    list-style: none;
+    padding-top: 38px;
+    cursor: pointer;
+}
+
+.header__content .menu .menu__login::before {
+    content: '';
+    display: block;
+    border-top: 1px solid var(--GrayishViolet);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.header__content .menu .menu__login {
+    list-style: none;
+}
+
+.header__content .menu .menu__login .menu__list-item {
+    cursor: pointer;
+}
+
+.header__content .menu .menu__login .menu__list-item:last-child {
+    margin: auto;
+    margin-top: 27px;
+    margin-bottom: 39px;
+    background: var(--Cyan);
+    width: 80%;
+    border-radius: 30px;
+    padding: 15px;
+}
