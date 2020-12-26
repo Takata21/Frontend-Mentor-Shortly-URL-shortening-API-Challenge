@@ -149,6 +149,7 @@ body {
     padding: 36px 25px;
     padding-bottom: 169px;
     background: white;
+    overflow: hidden;
 }
 
 .hero .hero-img {
