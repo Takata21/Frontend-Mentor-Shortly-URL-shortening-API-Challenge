@@ -217,6 +217,11 @@ body {
     font-style: italic;
     letter-spacing: 1px;
     margin-top: 5px;
+    visibility: hidden;
+}
+
+.link-form .url .error-message.active {
+    visibility: visible;
 }
 
 .link-form .link-input {
@@ -251,6 +256,11 @@ body {
     margin: 22px 0;
     display: grid;
     gap: 20px;
+}
+
+.shortlinks__loading {
+    margin: auto;
+    /* display: none; */
 }
 
 .shortlinks .newlink {
